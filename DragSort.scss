@@ -1,0 +1,54 @@
+.drag-box{
+  h1{
+    text-shadow: 1px 1px 10px #a9a9a9;
+    font-size: 40px;
+  }
+}
+.block-box{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-image: -webkit-gradient(linear, 30% 20%, 80% 80%, from(#414141), to(#252524));
+  margin: 0 auto;
+  border-radius: 8px;
+  .block-img{
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top:0;
+    cursor:default;
+    //width: 20vmin;
+    //height: 20vmin;
+    user-select: none;
+    -webkit-user-drag: none;
+    z-index: 1;
+    width: 85px;
+    height: 85px;
+    margin: 20px;
+    font-size: 45px;
+    box-shadow: 6px 6px 20px 9px rgba(17, 17, 17, 0.14);
+    background: rgb(16, 16, 16);
+    line-height: 85px;
+    font-weight: bold;
+    color: #ff6a24;
+    text-shadow: 2px 2px 4px #a34545;
+  }
+  .init-animation{
+    animation: init 5s ease infinite;
+    z-index: 999;
+  }
+  @keyframes init {
+    from{
+      left: 0;
+      top:0;
+    }
+    to{
+      left: 100px;
+      top: 100px;
+    }
+
+  }
+}
+.btn-box{
+  padding: 20px;
+}
